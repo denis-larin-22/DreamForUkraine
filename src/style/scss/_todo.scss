@@ -1,0 +1,134 @@
+.note {
+    &-page-wrap {
+        position: relative;
+        background: url('../assets/todo-bcg.png') no-repeat center; 
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    //Form
+    &-form {
+        border-radius: 0 0 10px 10px;
+        padding: 20px;
+        box-shadow: 20px 3px 42px 14px rgba(0, 0, 0, 0.8);
+        display: grid;
+        align-items: center;
+        grid-template-areas: 
+            'inputText inputText inputText ' 
+            'labelPriority inputPriority addBtn';
+        gap: 15px;
+        margin-bottom: 30px;
+        background-color: $white;
+
+    }
+    &-form-editor {
+        background: url('../assets/edit.svg') no-repeat 40px;
+        background-size: contain;
+    }
+    &-input-text {
+        grid-area: inputText;
+        padding: 1.2rem;
+        border: 1px solid #0071CE;
+        border-radius: $b-radius;
+        font-size: 2rem;
+    }
+    &-label-priority{
+        grid-area: labelPriority;
+        justify-self: end;
+    }
+    &-input-priority{
+        grid-area: inputPriority;
+        height: 100%;
+        border-radius: $b-radius;
+        text-align: center;
+    }
+    &-total{
+        grid-area: total;   
+    }
+    &-list {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 30px 0;
+        padding-bottom: 60px;
+    }
+    &-greetings {
+        @include font-setting (600, 1.5rem, 1rem);
+    }
+}
+//Buttons
+.add-btn, .save-btn {
+    width: 100%;
+    grid-area: addBtn;
+}
+.delete-btn {
+    background-color: #ad050ecc;
+}
+.delete-btn:hover {
+    border-color: #ad050ecc;
+    background-color: $white;
+    color: #ad050ecc;
+}
+//Notes-list
+.list-item {
+    position: relative;
+    background-color: $white;
+    box-shadow: 13px 3px 42px 0px rgba(0, 0, 0, 0.8);
+    border-radius: $b-radius;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $blue;
+    padding: 10px;
+    order: -1;
+    color: $white;
+}
+.item-priority {
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    color: $blue;
+    border-radius: 50%;
+    text-align: center;
+    @include font-setting (500, 30px, 40px);
+}
+.item-buttons {
+    display: flex;
+    align-self: flex-end;
+    gap: 0 10px;
+    position: absolute;
+    bottom: -60px;
+    right: 10px;
+    transition: 0.2s all ease;
+}
+.list-item:hover .item-buttons {
+    bottom: 10px;
+}
+.toggle-btn{
+    width: 20px;
+}
+.item-text {
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.date {
+    padding: 10px;
+    font-size: 14px;
+}
+//Footer-todo
+.footer {
+    &_todo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+    }
+}
+.d-none {
+    display: none;
+}

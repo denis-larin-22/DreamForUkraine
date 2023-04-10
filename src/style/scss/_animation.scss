@@ -1,0 +1,22 @@
+//Transition/transform spawn animation JS
+.el-animation-right {
+    transform: translate(5rem, 0);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.el-animation-left {
+    transform: translate(-5rem, 0);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.el-animation-down {
+    transform: translate(0, 8rem);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.element-show {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+  

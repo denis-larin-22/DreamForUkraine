@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dream for Ukraine</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <div class="head-wrap">
+        <div class="container">
+            <div class="flex-wrap">
+                <header class="header">
+                    <a href="#" class="header__logo">
+                        <img src="./assets/dreamForUkraine-logo.svg" alt="dreamForUkraine" class="header__logo-img">
+                    </a>
+                    <button id="goToList" class="header__todo-list blue-btn">До списку</button>
+                </header>
+
+                <main class="main">
+                    <h2 class="main__h2 el-animation-right">Мрій</h2>
+                    <h3 class="main__h3 el-animation-right">Для</h3>
+                    <h1 class="main__h1 el-animation-right">України</h1>
+                    <p id="invincibility" class="main__invincibility el-animation-down"></p>
+                    <a href="#aboutId" class="main__next"><img src="./assets/arrow-down.svg" alt="down"></a>
+                </main>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <section id="aboutId" class="about">
+            <div class="about__text">
+                <p class="about__quote el-animation-down">Машина часу є у кожного з нас: те, що повертає у минуле —
+                    спогади; те, що
+                    забирає
+                    в майбутнє - <span class="highlight-yellow">мрії.</span></p>
+                <h3 class="about__h3 highlight-blue">Герберт Уеллс</h3>
+            </div>
+            <img class="about__img shadow-wrap el-animation-right" src="./assets/about-bcg.jpg" alt="Ukraine landskape">
+            <img class="about__ornament el-animation-down" src="./assets/blue-ornament1.svg" alt="ornament">
+        </section>
+    </div>
+
+    <div class="spacing spacing-one"></div>
+
+    <div class="container">
+        <article class="item">
+            <div class="item__wrap">
+                <div class="item__content item__content_first">
+                    <h3 class="item__h3 lg-text highlight-yellow el-animation-left">Привіт</h3>
+                    <p class="item__text md-text el-animation-left">
+                        Навіть у такий непростий час треба не забувати продовжувати жити, планувати та мріяти.
+                        Чого б тобі хотілося прямо зараз? Подумай, і залиш ще один пункт у своєму списку.
+                    </p>
+                    <p class="item__text md-text el-animation-left">Нехай це будуть різні бажання і цілі: повернутися
+                        додому,
+                        зібратися
+                        всією
+                        сім'єю, подорожувати
+                        країною, розвиватися, пройтися вулицями рідного міста, побачитися з друзями яких давно не бачив
+                        або
+                        ж просто випити кави в колись улюбленій кав'ярні.</p>
+                    <a href="#itemSecond" class="blue-btn item__next">Далі</a>
+                </div>
+                <div class="item__img-wrap el-animation-right">
+                    <img src="./assets/think-about.png" alt="think about something"
+                        class="item__img item__img_pos1 shadow-wrap">
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="spacing spacing-two"></div>
+
+    <div class="container">
+        <article class="item">
+            <div id="itemSecond" class="item__wrap item__wrap_reverse">
+                <div class="item__content item__content_second">
+                    <h2 class="item__text md-text el-animation-right">
+                        З кожною виконаною метою, з кожною здійсненою маленькою мрією почуття <span
+                            class="highlight-blue">миру</span> та спокою
+                        повертатиметься швидше.</h2>
+                    <p class="item__text md-text el-animation-right">
+                        <span class="highlight-yellow">Перемога</span> обов'язково скоро буде, що ж, давай швидше
+                        розпочинати свій список бажань.
+                    </p>
+                    <a href="#idAuth" class="blue-btn item__next item__next-reverse">Далі</a>
+                </div>
+                <div class="item__img-wrap el-animation-left">
+                    <img src="./assets/friends.jpg" alt="think about something"
+                        class="item__img item__img_pos1 shadow-wrap">
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="spacing spacing-three"></div>
+    <!-- Start ToDoList -->
+    <div class="container">
+        <section id="idAuth" class="auth">
+            <div class="auth__content">
+                <p class="auth__text md-text el-animation-left">Твій список бажань зберігатиметься під твоїм <span
+                        class="highlight-yellow">логіном.</span> </p>
+                <p class="auth__text md-text el-animation-left">Для початку придумай свій <span
+                        class="highlight-blue">унікальний</span>
+                    логін, це може бути все, що завгодно,
+                    будь-яке
+                    слово або кілька слів (без пробілів). <span class="highlight-yellow">Обов'язково запам'ятай</span>
+                    чи
+                    збережи десь свій логін так як доступ до
+                    твого списку буде тільки за ним і тільки в тебе, якщо його втратити - то загубиться і твій список.
+                </p>
+            </div>
+
+
+            <div class="auth-todo el-animation-right">
+                <h3 class="auth-todo__desk md-text">Введи свій логін:</h3>
+                <input class="auth-todo__text" type="text" placeholder="Логін">
+                <button class="auth-todo__login" type="submit">Увійти</button>
+            </div>
+
+            <h3 class="auth__h3 el-animation-down">Починай мріяти вже зараз!</h3>
+            <!-- Preview-list soon-->
+            <form class="note-form d-none">
+                <input name="noteText" required class="note-input-text" type="text" placeholder="Note-text">
+                <select class="note-input-priority" name="priority">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <button class="add-btn">Add note</button>
+            </form>
+            <ul class="note-list d-none">
+            </ul>
+            <!-- preview -->
+        </section>
+    </div>
+
+    <div class="spacing spacing-four"></div>
+
+    <div class="container">
+        <article class="item">
+            <div class="item__wrap item__wrap_reverse">
+                <div class="item__content item__content_third">
+                    <h3 class="item__text md-text el-animation-right">
+                        Твій список буде створено <span class="highlight-yellow">автоматично</span> при першій
+                        авторизації під твоїм логіном.
+                        Надалі щоб перейти до свого списку, просто введи свій логін.
+                    </h3>
+                    <p class="item__text md-text el-animation-right">Список є <span
+                            class="highlight-blue">анонімним,</span> інші
+                        користувачі не мають до нього доступу.
+                    </p>
+                    <!-- <a href="#idAuth" class="item__next item__next-reverse el-animation-down">Перейти до списку</a> -->
+                </div>
+                <div class="item__img-wrap el-animation-left">
+                    <img src="./assets/kharkiv.png" alt="think about something"
+                        class="item__img item__img_pos1 shadow-wrap">
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="spacing spacing-five"></div>
+
+    <div class="dark-bcg">
+        <div class="container">
+            <article class="item">
+                <div class="item__wrap">
+                    <div class="item__content">
+                        <h3 class="item__h3 lg-text highlight-pale el-animation-left">Війна триває</h3>
+                        <p class="item__text el-animation-left">Пам'ятай, що кожна наша можливість жити,
+                            працювати, вчитися,
+                            мріяти і
+                            планувати майбутнє сплачена чиїмось здоров'ям або навіть
+                            <span class="highlight-grey">життям.</span>
+                        </p>
+                        <p class="item__text el-animation-left">Допоможи нашим хлопцям, наближай нашу
+                            перемогу –
+                            <span class="highlight-yellow">підтримай ЗСУ!</span>
+                        </p>
+                    </div>
+                    <div class="item__img-wrap el-animation-right">
+                        <img src="./assets/zsu.jpg" alt="ZSU warrior" class="item__img item__img_pos1 shadow-wrap">
+                    </div>
+                </div>
+            </article>
+            <div class="support el-animation-down">
+                <a href="https://savelife.in.ua/" target="_blank" class="support__link">
+                    <img src="./assets/zhivim.svg" alt="Фонд Повернись живим" class="support__logo">
+                </a>
+                <a href="https://u24.gov.ua/uk" target="_blank" class="support__link">
+                    <img src="./assets/united24.svg" alt="United24" class="support__logo">
+                </a>
+                <a href="https://www.razomforukraine.org/" target="_blank" class="support__link">
+                    <img src="./assets/razom.png" alt="Razom UA" class="support__logo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback-wrap">
+        <div class="container">
+            <section class="feedback">
+                <form id="feedbackForm" class="feedback__form el-animation-down">
+                    <h5 class="feedback__item md-text highlight-blue">Напиши якщо виникли питання або залиш відгук</h5>
+                    <input id="feedbackEmail" type="text" class="feedback__email" placeholder="eMail" required>
+                    <input id="feedbackText" type="text" class="feedback__text" placeholder="Текст повідомлення"
+                        required>
+                    <button id="feedbackSubmit" class="feedback__submit blue-btn">Надіслати</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <div class="footer-wrap">
+        <div class="container">
+            <footer class="footer">
+                <p class="footer__creator">Developed by Denis Larin 2023</p>
+                <a href="#"><img class="footer__logo" src="./assets/dreamForUkraine-logo.svg" alt="DreamForUkraine"></a>
+                <ul class="footer__list">
+                    <li>Follow me</li>
+                    <li class="footer__link"><a target="_blank" href="https://github.com/denis-larin-22"><img
+                                src="./assets/github.svg" alt="GitHub"></a></li>
+                    <li class="footer__link"><a target="_blank" href="https://www.instagram.com/den4ik_larin/"><img
+                                src="./assets/instagram.svg" alt="Instagram"></a></li>
+                    <li class="footer__link"><a target="_blank" href="https://www.linkedin.com/feed/"><img
+                                src="./assets/linkedin.svg" alt="LinkedIn"></a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+    <script src="./scripts/animation.js"></script>
+    <script src="./scripts/goToList.js"></script>
+    <script src="./scripts/daysCounter.js"></script>
+    <script type="module" src="./scripts/feedback.js"></script>
+</body>
+
+</html>

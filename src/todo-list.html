@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream list</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <div class="note-page-wrap">
+        <div class="container">
+            <form class="note-form">
+                <h1 class="note-greetings"></h1>
+                <input id="noteText" required class="note-input-text" type="text" placeholder="Додати новий запис">
+                <label class="note-label-priority md-text highlight-blue" for="notePriority">Пріоритет</label>
+                <select id="notePriority" class="note-input-priority md-text" name="priority">
+                    <option class="md-text" value="1">1</option>
+                    <option class="md-text" value="2">2</option>
+                    <option class="md-text" value="3">3</option>
+                </select>
+                <button class="add-btn blue-btn">Додати</button>
+            </form>
+
+            <ul class="note-list">
+            </ul>
+        </div>
+
+        <footer class="footer footer_todo">
+            <p class="footer__creator">Developed by Denis Larin 2023</p>
+        </footer>
+
+    </div>
+
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./scripts/greetings.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+//Templates
+$white: #ffff;
+$yellow: #FFFF00;
+$blue: #0071CE;
+$black: #2D2A26;
+
+$b-radius: 10px;
+//Mixin
+@mixin font-setting ($w, $s, $l) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+}
+//Start
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: $white;
+    color: #2D2A26;
+}
+a {
+    color: rgba(255, 255, 255, 1);
+}
+//Reused classes
+.container {
+    max-width: 1636px - 40px;
+    padding: 0 20px;
+    margin:  0 auto;
+}
+.dark-bcg {
+    background-color: #1E1E1E;
+    color: rgba(85, 85, 85, 0.8);
+    text-shadow: 17px 3px 15px rgb(0 0 0);
+    @include font-setting (500, 2rem, 3rem);
+}
+.highlight {
+    text-shadow: 10px 11px 20px black;
+    &-yellow {
+        width: fit-content;
+        background-color: $yellow;
+        color: $black;
+    }
+    &-blue {
+        width: fit-content;
+        background-color: $blue;
+        color: $white;
+    }
+    &-dark {
+        text-shadow: 4px 2px 18px #000000;
+        color: $black;
+    }
+    &-grey {
+        background-color:  rgba(85, 85, 85, 0.8);
+        color: #c0c0c0;;
+    }
+    &-pale {
+        color: rgb(255 255 255 / 81%);
+    }
+}
+.shadow-wrap {
+    box-shadow: 20px 3px 42px 14px rgba(0, 0, 0, 0.8);
+}
+//Text-size
+.md-text {
+    @include font-setting (500, 1.6rem, 2.6rem);
+}
+.lg-text {
+    @include font-setting (700, 3.1rem, 3.7rem);
+}
+//Buttons
+.blue-btn {
+    @include font-setting (500, 1.5rem, 2rem);
+    text-transform: uppercase;
+    color: $black;
+    padding: 10px 20px;
+    background-color: $blue;
+    width: fit-content;
+    color: $white;
+    border: 1px solid $blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.blue-btn:hover {
+    background-color: $white;
+    color: $blue;
+}
+.blue-btn:active {
+    transform: scale(0.95);
+}
